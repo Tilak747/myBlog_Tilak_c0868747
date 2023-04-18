@@ -41,6 +41,23 @@
     -moz-transform: scale(1.15);
     transform: scale(1.15);
 }
+/*-----------------
+	Responsive
+-----------------------*/
+
+@media screen and (min-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .projects {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
 
 
 
@@ -55,6 +72,7 @@
     margin-top: 32px;
     text-align: left;
     overflow: none;
+    box-shadow: 0px 0px 2px #a9a9a9;
 }
 
 form label{
@@ -63,4 +81,21 @@ form label{
 form input {
     width: 100%;
     margin-bottom: 22px;
+}
+
+
+/*-----------------
+	Responsive
+-----------------------*/
+
+@media screen and (min-width: 768px) {
+    .contact{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact{
+        width: 80%;
+    }
 }
